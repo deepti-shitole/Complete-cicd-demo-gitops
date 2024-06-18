@@ -36,7 +36,7 @@ pipeline {
                    git commit -m "Updated Deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'Github-cred', gitToolName: 'Default')]) {
-                  sh "git push https://github.com/deepti-shitole/Complete-cicd-demo-gitops main"
+                  sh "git push https://github.com/deepti-shitole/Complete-cicd-demo-gitops main" 
                 }
             }
         }
